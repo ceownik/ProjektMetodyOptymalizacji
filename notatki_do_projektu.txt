@@ -1,0 +1,31 @@
+Wojciech Chmiel
+
+http://home.agh.edu.pl/~wch/
+
+
+================================================================================
+lab 1
+=======================================
+
+algorytm ewolucyjny
+	http://pl.wikipedia.org/wiki/Algorytm_ewolucyjny
+	http://pl.wikipedia.org/wiki/Programowanie_ewolucyjne
+
+opis krawędzi
+
+koszt przejścia przez węzły (koszt skrętu)
+
+koszty czasu przejazdu przez odcinek oraz koszt przejścia przez węzeł zmienny w czasie
+
+
+graf powinien być grafem skierowanym
+
+
+znalezienie rozwiązań początkowych - algorytm dijkstry, dalej algorytm ewolucyjny
+
+f_c => {f_1, f_2, ..., f_n}
+
+f = a_1*f_1 + a_2*f_2 + ... + a_n*f_n
+
+
+
