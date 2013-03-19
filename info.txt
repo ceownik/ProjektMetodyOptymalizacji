@@ -1,0 +1,72 @@
+Repozytorium plików projektu
+
+================================================================================
+pobieranie repozytorium pierwszy raz.
+
+1. instalacja git'a
+	instalator git'a: http://git-scm.com/downloads
+	instalacja w stylu kilknij "Dalej"
+	(instalujecie tylko git bash)
+2. tworzycie katalog, do którego chcecie ściągnąć pliki
+3. w Windows - prawym na katalog, w menu powinna być opcja "Git Bash"
+	jak ktoś ma linuxa, to chyba wie jak :)
+4. konfiguracja gita
+	trzeba podać swoją nazwę, pod którą będziecie edytować pliki
+	komendy są takie:
+		git config user.name __i tutaj nazwa__
+		git config user.email __jakiś email (przyjmuje wszystko)__
+5. skopiowanie repozytorium:
+	komenda:
+		git clone https://github.com/ceownik/ProjektMetodyOptymalizacji.git
+	i wszystkie pliki są już na dysku
+6. żeby móc wysłać zmiany na serwer każdy musi jeszcze mieć założone
+konto na https://github.com
+
+================================================================================
+pobieranie najnowszej wersji plików i wysyłanie wykonanych zmian na serwer
+
+1. za każdym razem trzeba sobie pobrać najnowszą wersję plików (może ktoś coś
+poprawił)
+	komenda:
+		git pull
+	jeśli nie działa, to prawdopodobnie trzeba kliknąć parę razy tabulator
+	i zobaczyć czego jeszcze może w komendzie brakować
+	
+2. jak wykonacie jakieś zmiany, to zawsz można zobaczyć, w których plikach się
+coś zmieniło
+	komenda:
+		git status
+	wyświetla listę zmienionych plików
+
+3. żeby zatwierdzić zmiany wpisuje się (w linii poleceń trzeba być w głównym
+katalogu projektu):
+	komenda:
+		git add *
+	oraz:
+		git commit -m "_za każdym razem obowiązkowe jest podanie opisu 
+		wprowadzonych zmian w cudzysłowiach - mogą to być dosłownie 2 słowa :)_"
+
+4. żeby wysłać wszystko na serwer wpisue się:
+	komenda:
+		git push
+	trzeba będzie podać nazwę użytkownika i hasło do github'a (nie każdy może
+	wprowadzać zmiany w naszym projekcie)
+
+5. no i to wszystko :)
+
+w skrócie:
+	pierwszy raz na start
+		git clone https://github.com/ceownik/ProjektMetodyOptymalizacji.git
+	
+	później za każdym razem, jak chcemy coś zrobić:
+		git pull					- pobiera najnowszą wersję plików
+			==== robimy swoje zmiany ====
+		git add *					- "zatwierdza pliki ze zmianami"
+		git commit -m "_opis_"		- zatwierdza zmiany
+		git push					- wysyłą wszystko na serwer
+	
+	czyli w sumie wszystko sprowadza się do 4 komend - niewiele w porównaniu
+	do konfiguracji routera ;P
+	
+	
+jeśli coś pomyliłem i nie działa, to dajcie znać.
